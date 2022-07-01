@@ -23,6 +23,12 @@ end)
 
 Tab1:Dropdown("Dropdown", {"Bedwars", "Skywars", "Pet Sim"}, function(Selected)
     print(Selected)
-end
+end)
+  
+local Tab2 = Window:Tab("Tab 2")
+
+Tab2:Button("Destroy UI", function()
+    Window:Remove()
+end)
 
 -- More functions are coming soon, have a good day!
