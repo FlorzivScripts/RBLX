@@ -5,7 +5,11 @@
 --]]
 
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/FlorzivScripts/RBLX/main/lib/FlorzivUI/Main.lua"))()
-local Window = Library:Window("Example")
+local Window = Library:Window({
+  ["GUI Name"] = "Example"; --  Put any GUI name here
+  ["Side Line Color"] = "Rainbow"; -- You can use Color3 or keep Rainbow.
+})
+
 local Tab1 = Window:Tab("Tab 1")
 
 Tab1:Button("Die", function()
